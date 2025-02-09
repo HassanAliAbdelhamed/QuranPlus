@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/QuranPlus/static/css/main.7bd41fbf.css",
+    "main.js": "/QuranPlus/static/js/main.74657f52.js",
+    "static/js/453.5565870f.chunk.js": "/QuranPlus/static/js/453.5565870f.chunk.js",
+    "static/media/hafs.otf": "/QuranPlus/static/media/hafs.972728a4d15979c86c1c.otf",
+    "static/media/1.jpg": "/QuranPlus/static/media/1.f78b7bf94883561fa95d.jpg",
+    "static/media/2.jpg": "/QuranPlus/static/media/2.a24c604c0476db72db41.jpg",
+    "static/media/radio.png": "/QuranPlus/static/media/radio.20cb34dc76706dc89344.png",
+    "static/media/head.png": "/QuranPlus/static/media/head.048c801317ce6264887a.png",
+    "index.html": "/QuranPlus/index.html",
+    "main.7bd41fbf.css.map": "/QuranPlus/static/css/main.7bd41fbf.css.map",
+    "main.74657f52.js.map": "/QuranPlus/static/js/main.74657f52.js.map",
+    "453.5565870f.chunk.js.map": "/QuranPlus/static/js/453.5565870f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bd41fbf.css",
+    "static/js/main.74657f52.js"
+  ]
+}

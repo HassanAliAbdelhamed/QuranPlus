@@ -1,0 +1,213 @@
+@import "../index.css";
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Apply the animation to the image */
+  .img {
+    animation: rotate 14s linear infinite; /* You can adjust duration and timing function as per your requirement */
+  }
+
+  @keyframes fadeIn {
+    80% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .live-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ab2828;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    animation: fadeIn 2s infinite;
+    animation-fill-mode:backwards ;
+  }
+#swaraID{
+  font-family: "Noto Nastaliq Urdu",serif !important;
+}
+.rhap_time{color: white;}
+
+
+.card, .card2 {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: #fff;
+  flex-direction: column;
+  font-size: 18px;
+  height: auto;
+  justify-content: center;
+  margin: 40px 10px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 8px;
+  text-align: center;
+  width: auto;
+}
+
+.mainCard{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 790px) {
+    .card2 {
+        position: absolute;
+        top: calc(100vh - 330px);
+    }
+}
+@media (max-width: 790px) {
+  .mainCard {
+      justify-content: center;
+  }
+}
+
+.card2 h2{
+  font-family: "Noto Nastaliq Urdu" !important;
+}
+
+#swara{
+  font-family:"Noto Nastaliq Urdu" !important
+}
+
+#ayaa{
+  display: contents;
+  text-align: justify;
+  cursor: pointer;
+  font-family: "hafs", serif !important;
+}
+#ayaa:hover{
+  color:#639c6d !important;
+}
+#quran{
+  font-family: "hafs", serif !important;
+  line-height: 50px ;
+  justify-content: center;
+  align-content: start;
+  display: contents;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align:justify;
+  
+}
+.quranPage{
+  font-family: "hafs", serif !important;
+  line-height: 50px ;
+  justify-content: center;
+  align-content: start;
+  display: contents;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align:justify;
+}
+#numberArabic{
+  font-family: 'Courier New', Courier, monospace !important;
+}
+@media  (max-width: 600px) {
+
+#quran{
+  text-align:center;
+  font-size: 22.25px;
+}
+}
+
+.tasmee3{
+  font-family: "Cairo Play", sans-serif !important;
+  display: inline;
+  padding: 5px 25px;
+  font-size: 20px;
+  background-color: rgb(39, 41, 47);
+  border-radius: 15px;
+  cursor:pointer;
+  transition: .3s;
+}
+.tasmee3:hover{
+  background-color: #1d1919;
+}
+
+.additions{
+  font-family: "Cairo Play", sans-serif !important;
+  display: inline;
+  padding: 5px 25px;
+  font-size: 20px;
+  border: .4px solid rgb(99, 156, 109);
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.incrementAyat{
+  color: white;
+  width: 80px;
+  height: 80px;
+  outline: none;
+  position: fixed !important;
+  left: 10px;
+  top: calc(90vh - 10px);
+}
+.incrementAyat {
+  appearance: none;
+  background-color: rgb(99, 156, 109);
+  border: 1px solid rgba(27, 31, 35, .15);
+  box-shadow: rgb(99, 156, 109) 2px 0px 15px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 50px;
+  
+}
+
+.incrementAyat:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  box-shadow: rgb(99, 156, 109) 2px 0px 15px;
+  outline: none;
+}
+
+.incrementAyat:hover {
+  background-color: rgb(79, 146, 91);
+}
+
+.incrementAyat:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.incrementAyat:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.incrementAyat:active {
+  background-color: #298e46;
+  box-shadow: rgb(99, 156, 109) 2px 0px 15px;
+}

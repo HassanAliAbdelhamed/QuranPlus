@@ -1,0 +1,16 @@
+
+#swara{
+    font-family:"Noto Nastaliq Urdu" !important
+  }
+
+.QuranCard:hover {
+  border-color: rgb(99, 156, 109) !important;
+  transition: .2s;
+}
+.QuranCard:hover .icon {
+  color: rgb(99, 156, 109) !important;
+  transition: .2s;
+}
+.QuranCard .icon:hover {
+  background-color: transparent !important;
+}

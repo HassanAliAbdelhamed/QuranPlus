@@ -1,0 +1,63 @@
+*{
+  font-family: "Noto Kufi Arabic", sans-serif !important;
+}
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+li,h6,h1,h2{
+
+  font-family: "Cairo Play", sans-serif !important
+}
+.rhap_play-pause-button{
+  height: 52px;
+}
+ol,menu{padding: 0;}
+
+.radioCard{
+  background-color: red !important;
+}
+.img2{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 144%;
+}
