@@ -46,7 +46,7 @@ function Player() {
   };
 
   return (
-    <div style={{flex:"1"}}>
+    <div style={{minHeight:"calc(100vh - 200px)"}}>
       <div style={{ position: "absolute", transform: 'translate(-50%, -50%)', top: "50%", left: "50%" }}>
         <img
           className='img'
