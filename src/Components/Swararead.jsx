@@ -4,7 +4,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import quranTitles from '../quranTitles';
 import "../css/style.css";
 import Loading from 'react-loading';
-import AutoCompleteSwarRead from './AutoCompleteSwarRead';
 import ReadSound from './ReadSound';
 
 // Material ui 
@@ -23,6 +22,7 @@ import quranSuar from '../Quran Api Json/Suars/quran.json'
 
 // Quran Tafaseer 
 import Muasr from '../Quran Api Json/Tafseer/ar_muyassar.json'
+import AutoCompleteSwar from './AutoCompleteSwar';
 // Dialog 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -150,7 +150,7 @@ export default function Swararead() {
             <Grid container spacing={2} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <Grid item xs={12} sm={10} lg={8} sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <Grid sx={{ color: "white" }} item xs={5}>
-                                <AutoCompleteSwarRead />
+                                <AutoCompleteSwar Label="قراءة" Dir="read" />
                             </Grid>
                             <Grid sx={{ color: "white" ,marginTop:"20px" ,textAlign:"left" }} item xs={5} >
                                 <p className='tasmee3' style={{color:"white" , fontFamily:"cairoPlay"}} onClick={()=>{navigate(`/tasmee3/${id}`)}}>تسميع</p>

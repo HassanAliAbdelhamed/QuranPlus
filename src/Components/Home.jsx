@@ -2,9 +2,8 @@ import * as React from 'react';
 import {  Grid } from '@mui/material';
 import '../css/home.css';
 import CardOfSwar from './CardOfSwar';
-import AutoCompleteSwarRead from './AutoCompleteSwarRead';
-import AutoCompleteSwarSound from './AutoCompleteSwarSound';
-import AutoCompleteTasmee3 from './AutoCompleteTasmee3';
+import AutoCompleteSwarRead from './AutoCompleteSwar';
+import AutoCompleteReader from './AutoCompleteReader';
 export default function Home() {
 
 
@@ -134,13 +133,13 @@ export default function Home() {
             <h1 style={{color:"white" ,fontSize:"40px"}}>قرآن +</h1>
             <Grid container spacing={2} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <Grid sx={{ color: "white" }} item xs={4}>
-                    <AutoCompleteSwarRead/>
+                    <AutoCompleteSwarRead Dir="read" Label="قراءة"/>
                 </Grid>
                 <Grid sx={{ color: "white" }} item xs={4}>
-                    <AutoCompleteTasmee3/>
+                    <AutoCompleteSwarRead Dir="tasmee3" Label="تسميع"/>
                 </Grid>
                 <Grid sx={{ color: "white" }} item xs={4} >
-                    <AutoCompleteSwarSound/>
+                    <AutoCompleteReader/>
                 </Grid>
 
             </Grid>

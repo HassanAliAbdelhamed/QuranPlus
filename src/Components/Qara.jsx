@@ -3,9 +3,9 @@ import { Avatar, Box } from "@mui/material";
 import 'react-h5-audio-player/lib/styles.css';
 import quraa from '../quraa';
 import { Link, useParams } from "react-router-dom";
-import AutoCompSwar from "./AutoCompSwar";
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import '../css/style.css';
+import AutoCompleteSwarWith3Digits from "./AutoCompleteSwarWith3Digits";
 export  const swar = [
     { id: 1, title: "الفاتحة" },
     { id: 2, title: "البقرة" },
@@ -140,7 +140,7 @@ function Qaraa() {
                 <Avatar alt="Cindy Baker" sx={{ width: '120px', height: "120px", marginRight: "30px" }} src={quraa[id].img} />
                 <h4 style={{ color: 'white', paddingRight: '30px' }}>{quraa[id].title}</h4>
             </Box>
-            <AutoCompSwar/>
+            <AutoCompleteSwarWith3Digits/>
             <menu>
                 <ol>
                     {swar.map(swara => (

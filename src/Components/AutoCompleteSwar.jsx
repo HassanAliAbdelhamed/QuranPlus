@@ -4,7 +4,7 @@ import { Autocomplete, TextField } from '@mui/material';
 import LibraryBooksIcon from '@mui/icons-material/AutoStories';
 import { useNavigate } from "react-router-dom";
 
-export default function AutoCompleteSwarRead() {
+export default function AutoCompleteSwar(props) {
   let quraaIds = {
     'الفاتحة':"1",
     "البقرة" :"2" , 
@@ -243,24 +243,22 @@ export default function AutoCompleteSwarRead() {
 
   function selectFun(e){
     let target=e.target.value;
-    let id=quraaIds[target]
-    console.log(id);
-    
+    let id=quraaIds[target]    
     if(id){
-    navigate(`/read/${id}`)
+    navigate(`/${props.Dir}/${id}`)
   }
   }
 
   return (
     <Autocomplete
-      sx={{ marginTop: '40px' ,'.css-6cc92e-MuiAutocomplete-root':{padding:"1"} }}
-      freeSolo
+    sx={{ marginTop: '-15px',marginBottom:'15px' }}
+    freeSolo
       options={top100Films.map((option) => option.label)}
       renderInput={(params) => (
         
         <TextField
           {...params}
-          placeholder="قراءة..."
+          placeholder={props.Label}
           InputProps={{
             ...params.InputProps,
             startAdornment: (

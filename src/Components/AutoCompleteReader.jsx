@@ -3,7 +3,7 @@ import { Autocomplete, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from "react-router-dom";
 
-export default function Autocomp() {
+export default function AutoCompleteReader() {
   let quraaIds = {
     "أبو بكر الشاطري": 1,
     "أحمد الحواشي": 2,
@@ -248,7 +248,7 @@ export default function Autocomp() {
         
         <TextField
           {...params}
-          placeholder="أسم القارئ..."
+          placeholder="أسم القارئ"
           InputProps={{
             ...params.InputProps,
             startAdornment: (

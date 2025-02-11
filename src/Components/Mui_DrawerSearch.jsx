@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Quraa from './Quraa';
-import Autocomp from './AutoComp';
 import { Typography } from '@mui/material';
 import Loading from 'react-loading';
+import AutoCompleteReader from './AutoCompleteReader';
 
 
 
@@ -40,7 +40,7 @@ function Mui_DrawerSearch() {
           <Typography sx={{ textAlign: 'start', color: 'white', marginBottom: '40px' }} variant="h6" noWrap component="h6">
             أبحث عن الشيخ الذي تريدة ...
           </Typography>
-          <Autocomp />
+          <AutoCompleteReader/>
           <Quraa />
         </>
       )}

@@ -6,7 +6,7 @@ import "../css/style.css";
 
 // Quran Swar 
 import quranSuar from '../Quran Api Json/Suars/quran.json';
-import AutoCompleteTasmee3 from './AutoCompleteTasmee3';
+import AutoCompleteSwar from './AutoCompleteSwar';
 
 export default function Tasmee3() {
     let navigate = useNavigate();
@@ -87,7 +87,7 @@ export default function Tasmee3() {
                     sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                 >
                     <Grid sx={{ color: 'white' }} item xs={5}>
-                        <AutoCompleteTasmee3 />
+                                <AutoCompleteSwar Label="تسميع" Dir="tasmee3" />                    
                     </Grid>
                     <Grid sx={{ color: 'white', marginTop: '20px', textAlign: 'left' }} item xs={6}>
                         <p
