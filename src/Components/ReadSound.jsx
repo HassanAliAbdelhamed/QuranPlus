@@ -47,7 +47,7 @@ function ReadSound(props) {
 
                 <AudioPlayer
                     style={{ direction: "ltr", background: '#27292f', borderRadius: '14px', bottom: '5px', left: '0' }}
-                    loop={true}
+                    autoPlay
                     showJumpControls
                     src={value===1? Sound1  :Sound2}
 
