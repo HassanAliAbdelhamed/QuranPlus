@@ -51,11 +51,15 @@ export default function Tasmee3() {
 
     // Function to add a new Ayah to the list of displayed Ayahs
     function addAyah() {
-        // Ensure we start from the selected Ayah
+
         let newAyaIndex = displayedAyahs.length + startingAyah - 1;
 
         // Ensure that we don't exceed the number of available verses
         if (newAyaIndex < quranSuar[newId].verses.length) {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth', // Optional: Adds smooth scrolling
+              });
             setDisplayedAyahs((prev) => [
                 ...prev,
                 {
@@ -70,7 +74,7 @@ export default function Tasmee3() {
     const SwaraTitle = Swarainformations?.surahNameArabicLong;
 
     return (
-        <div style={{ position: 'relative' }}>
+        <div style={{ position: 'relative' ,minHeight:"100vh" }}>
             <button type="button" className="incrementAyat" onClick={addAyah}>
                 +
             </button>

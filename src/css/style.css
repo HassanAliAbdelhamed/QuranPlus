@@ -158,6 +158,7 @@
   position: fixed !important;
   left: 10px;
   top: calc(90vh - 10px);
+  z-index: 1000;
 }
 .incrementAyat {
   appearance: none;

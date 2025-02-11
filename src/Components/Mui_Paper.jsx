@@ -40,7 +40,7 @@ export default function ActionAreaCard(props) {
           component="img"
           sx={{ borderRadius: "10%", width: 145, height: 170 }}
           image={props.imgSource}
-          alt="green iguana"
+          alt={props.title}
         />
         <CardContent>
           <Typography gutterBottom variant="h7" color="white" component="div">

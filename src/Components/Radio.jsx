@@ -45,10 +45,10 @@ function Radio() {
                 </Grid>
 
                 <Grid item xs={6} sm={3} xl={2} gap={1} >
-                        <Link onClick={()=>{window.scrollTo(0,0)}} style={{ textDecoration: "none", color: 'white' }} to={`10`}><RadioCard imgSource='https://hassanaliabdelhamed.github.io/Quran-Picture/1.jpg' title="ماهر المعيقلي" /></Link>
+                        <Link onClick={()=>{window.scrollTo(0,0)}} style={{ textDecoration: "none", color: 'white' }} to={`10`}><RadioCard imgSource='https://hassanaliabdelhamed.github.io/Quran-Picture/72.jpg' title="ماهر المعيقلي" /></Link>
                 </Grid>
                 <Grid item xs={6} sm={3} xl={2} gap={1} >
-                        <Link onClick={()=>{window.scrollTo(0,0)}} style={{ textDecoration: "none", color: 'white' }} to={`11`}><RadioCard imgSource='https://hassanaliabdelhamed.github.io/Quran-Picture/72.jpg' title="محمد صديق المنشاوي" /></Link>
+                        <Link onClick={()=>{window.scrollTo(0,0)}} style={{ textDecoration: "none", color: 'white' }} to={`11`}><RadioCard imgSource='https://hassanaliabdelhamed.github.io/Quran-Picture/82.jpg' title="محمد صديق المنشاوي" /></Link>
                 </Grid> 
 
                 <Grid item xs={6} sm={3} xl={2} gap={1} >
