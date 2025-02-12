@@ -3,7 +3,7 @@ import { Autocomplete, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from "react-router-dom";
 
-export default function AutoCompleteReader() {
+export default function AutoCompleteReader(props) {
   let quraaIds = {
     "أبو بكر الشاطري": 1,
     "أحمد الحواشي": 2,
@@ -233,7 +233,11 @@ export default function AutoCompleteReader() {
     let target=e.target.value;
     let id=quraaIds[target]
     if(id){
-    navigate(`/${id}`)
+      if(props.Dir){
+        navigate(`/${id- 1}/${props.Dir}`)
+      }
+      else
+      navigate(`/${id }`)
   }
   }
 

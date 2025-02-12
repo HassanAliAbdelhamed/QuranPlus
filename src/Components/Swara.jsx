@@ -5,7 +5,7 @@ import quraa from '../quraa';
 import { Link, useParams } from "react-router-dom";
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import '../css/style.css';
-import AutoCompleteSwar from "./AutoCompleteSwar";
+import AutoCompleteReader from "./AutoCompleteReader";
 function Swar() {
     let { id } = useParams();
     id = id - 1;
@@ -142,7 +142,7 @@ function Swar() {
             <Box sx={{ display: 'flex', alignItems: 'center', padding: '40px', background: 'linear-gradient(to bottom, #484e5b, #1f2125)', margin: '-80px -30px 0px' }}>
                 <h4 id="swara" style={{ color: 'white', padding: '22px',fontSize:"23px" }}> سورة {swar[id].title}</h4>
             </Box>
-            <AutoCompleteSwar Dir={swaraid}/>
+            <AutoCompleteReader Dir={id +1}/>
             <menu>
                 <ol>
                     {quraa.map(qare => (
