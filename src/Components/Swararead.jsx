@@ -192,8 +192,8 @@ export default function Swararead() {
                                             {ayah.text}
                                             <span> </span>
                                             <img
-                                                src={`https://hassanaliabdelhamed.github.io/Ayat_Nunmbers/a_${ayah.id}.png`}
-                                                alt="Ayah Number"
+                                                src={`https://hassanaliabdelhamed.github.io/Ayat_Nunmbers/imgs/a_${ayah.id}.png`}
+                                                alt={ayah.id}
                                                 style={{
                                                     height: '38px',
                                                     background: 'transparent',

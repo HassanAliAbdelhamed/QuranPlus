@@ -207,8 +207,8 @@ export default function Tasmee3() {
                                     <p id="ayaa">{ayah.text}</p>
                                     <span> </span>
                                     <img
-                                        src={`https://hassanaliabdelhamed.github.io/Ayat_Nunmbers/a_${ayah.number}.png`}
-                                        alt="Ayah Number"
+                                        src={`https://hassanaliabdelhamed.github.io/Ayat_Nunmbers/imgs/a_${ayah.number}.png`}
+                                        alt={ayah.number}
                                         style={{
                                             height: '38px',
                                             background: 'transparent',

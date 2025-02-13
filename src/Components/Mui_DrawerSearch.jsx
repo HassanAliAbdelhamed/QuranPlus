@@ -12,7 +12,7 @@ function Mui_DrawerSearch() {
   // Function to preload images
   const preloadImages = async () => {
     const imageUrls = Array.from({ length: 107 }, (_, index) =>
-      `https://hassanaliabdelhamed.github.io/Quran-Picture/${index + 1}.jpg`
+      `https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/${index + 1}.jpg`
     );
     const imagePromises = imageUrls.map((url) => {
       return new Promise((resolve) => {

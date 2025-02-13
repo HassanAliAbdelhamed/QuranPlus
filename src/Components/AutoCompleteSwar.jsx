@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 
+
 import LibraryBooksIcon from '@mui/icons-material/AutoStories';
 import { useNavigate } from "react-router-dom";
+import BorderColorIcon from '@mui/icons-material/BorderColor';
 
 export default function AutoCompleteSwar(props) {
   let quraaIds = {
@@ -262,7 +264,7 @@ export default function AutoCompleteSwar(props) {
           InputProps={{
             ...params.InputProps,
             startAdornment: (
-              <LibraryBooksIcon style={{ color: 'white' }} />
+              props.Dir == "read"?<LibraryBooksIcon style={{ color: 'white' }} />:<BorderColorIcon style={{ color: 'white' }} />
             ),
             style: { color: 'white' }
           }}

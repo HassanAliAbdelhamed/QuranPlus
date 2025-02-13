@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+
 import { useNavigate } from "react-router-dom";
 
 export default function AutoCompleteReader(props) {
@@ -256,7 +257,7 @@ export default function AutoCompleteReader(props) {
           InputProps={{
             ...params.InputProps,
             startAdornment: (
-              <SearchIcon style={{ color: 'white' }} />
+              <HeadsetMicIcon style={{ color: 'white' }} />
             ),
             style: { color: 'white' }
           }}
