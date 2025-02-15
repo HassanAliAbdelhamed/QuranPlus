@@ -3,10 +3,10 @@ import 'react-h5-audio-player/lib/styles.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import quraa from '../quraa';
 import '../css/style.css';
-import { swar } from './Qara';
 import { useEffect, useState } from 'react';
+import AllSwar from '../AllSwar';
 function Player() {
-  
+  let swar= AllSwar;
   //convertToThreeDigitString
   function convertToThreeDigitString(number) {
     if(number === 115){

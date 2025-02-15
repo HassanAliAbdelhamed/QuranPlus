@@ -201,7 +201,7 @@ export default function Tasmee3() {
                         {/* Show error message if Ayah number is invalid */}
                         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
 
-                        <div id="quran" style={{ color: 'white', display: 'contents', textAlign: 'right' }}>
+                        <div id="quran" style={{ color: 'white', display: 'contents', textAlign: 'right' ,lineHeight:"50px" }}>
                             {displayedAyahs.map((ayah, index) => (
                                 <div key={index} style={{ display: 'contents' }}>
                                     <p id="ayaa">{ayah.text}</p>
