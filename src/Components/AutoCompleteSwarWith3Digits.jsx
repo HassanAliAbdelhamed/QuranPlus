@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import LibraryBooksIcon from '@mui/icons-material/AutoStories';
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { Search } from '@mui/icons-material';
 
 export default function AutoCompleteSwarWith3Digits() {
+  const [direction ,setdirection]=React.useState();
   let pars = useParams();
   let idsh = pars.id;
   idsh-=1;
@@ -241,13 +243,12 @@ export default function AutoCompleteSwarWith3Digits() {
         { label: 'الإخلاص' },
         { label: "الفلق" },
         { label: 'الناس' },  ];
-  const navigate = useNavigate();
 
   function selectFun(e){
     let target=e.target.value;
     let id=quraaIds[target]
     if(id){
-    navigate(`/${idsh}/${id}`)
+    setdirection(`/${idsh}/${id}`)
   }
   }
 
@@ -265,6 +266,9 @@ export default function AutoCompleteSwarWith3Digits() {
             ...params.InputProps,
             startAdornment: (
               <LibraryBooksIcon style={{ color: 'white' }} />
+            ),
+            endAdornment:(
+              <Link to={direction}> <Search style={{cursor:"pointer", color:"white" , margin:"5px",borderRadius:"10px"}} /></Link>
             ),
             style: { color: 'white' }
           }}

@@ -2,11 +2,14 @@ import * as React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Search } from '@mui/icons-material';
 
 export default function AutoCompleteReader(props) {
+  const [direction ,setdirection]=React.useState();
   let quraaIds = {
-    "أبو بكر الشاطري": 1,
+    
+    "وهبي أحمد": 1,
     "أحمد الحواشي": 2,
     "أحمد الطرابلسي": 3,
     "أحمد بن على العجمى": 4,
@@ -112,12 +115,15 @@ export default function AutoCompleteReader(props) {
     "ياسر الدوسري": 104,
     "ياسر القرشي": 105,
     "ياسر المزروعي": 106,
-    "يوسف بن نوح أحمد": 107
+    "يوسف بن نوح أحمد": 107,
+    "أبو بكر الشاطري": 108,
+
   };
   
   
 
   const top100Films = [
+    { label: "وهبي أحمد" },
     { label: "أبو بكر الشاطري" },
     { label: "أحمد الحواشي" },
     { label: "أحمد الطرابلسي" },
@@ -227,18 +233,16 @@ export default function AutoCompleteReader(props) {
     { label: "يوسف بن نوح أحمد" }
   ];
   
-  const navigate = useNavigate();
-
   function selectFun(e){
     window.scrollTo(0,0)
     let target=e.target.value;
     let id=quraaIds[target]
     if(id){
       if(props.Dir){
-        navigate(`/${id- 1}/${props.Dir}`)
+        setdirection(`/${id- 1}/${props.Dir}`)
       }
       else
-      navigate(`/${id }`)
+      setdirection(`/${id }`)
   }
   }
 
@@ -258,6 +262,9 @@ export default function AutoCompleteReader(props) {
             ...params.InputProps,
             startAdornment: (
               <HeadsetMicIcon style={{ color: 'white' }} />
+            ),
+            endAdornment:(
+              <Link to={direction}> <Search style={{cursor:"pointer", color:"white" , margin:"5px",borderRadius:"10px"}} /></Link>
             ),
             style: { color: 'white' }
           }}

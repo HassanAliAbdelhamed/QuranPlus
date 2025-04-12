@@ -1,5 +1,5 @@
 let quraa = [
-    { id: 1, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/1.jpg', Audiosource: "https://download.ourquraan.com/Abu_Baker_Shatri/", title: "أبو بكر الشاطري" },
+    { id: 1, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/108.jpg', Audiosource: 'https://hassanaliabdelhamed.github.io/Wahby/', title: "وهبي أحمد" , swar:[1,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]},
     { id: 2, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/2.jpg', Audiosource: "https://download.ourquraan.com/Ahmad_Al-Hawashy/", title: "أحمد الحواشي" },
     { id: 3, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/3.jpg', Audiosource: "https://download.ourquraan.com/Ahmed-Trabolsi(Hafs)/", title: "أحمد الطرابلسي" },
     { id: 4, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/4.jpg', Audiosource: "https://download.ourquraan.com/Ahmed_Alajmi/", title: "أحمد بن على العجمى" },
@@ -105,7 +105,9 @@ let quraa = [
     { id: 104, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/104.jpg', Audiosource: 'https://download.ourquraan.com/Yasser_Aldosari/',  title: "ياسر الدوسري" },
     { id: 105, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/105.jpg', Audiosource: 'https://download.ourquraan.com/Yaser-Alkershy/', title: "ياسر القرشي" },
     { id: 106, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/106.jpg', Audiosource: 'https://download.ourquraan.com/Yasser_Almazroyee_(ya3kooob)/', title: "ياسر المزروعي" },
-    { id: 107, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/107.jpg', Audiosource: 'https://download.ourquraan.com/Yousef-Bin-Nooh-Ahmed/', title: "يوسف بن نوح أحمد"}
+    { id: 107, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/107.jpg', Audiosource: 'https://download.ourquraan.com/Yousef-Bin-Nooh-Ahmed/', title: "يوسف بن نوح أحمد"},
+    { id: 108, img: 'https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/1.jpg', Audiosource: "https://download.ourquraan.com/Abu_Baker_Shatri/", title: "أبو بكر الشاطري" },
+
 ];
 
 export default quraa;

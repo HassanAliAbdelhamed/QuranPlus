@@ -3,10 +3,12 @@ import { Autocomplete, TextField } from '@mui/material';
 
 
 import LibraryBooksIcon from '@mui/icons-material/AutoStories';
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import BorderColorIcon from '@mui/icons-material/BorderColor';
+import { Search } from '@mui/icons-material';
 
 export default function AutoCompleteSwar(props) {
+  const [direction ,setdirection]=React.useState();
   let quraaIds = {
     'الفاتحة':"1",
     "البقرة" :"2" , 
@@ -241,13 +243,12 @@ export default function AutoCompleteSwar(props) {
         { label: 'الإخلاص' },
         { label: "الفلق" },
         { label: 'الناس' },  ];
-  const navigate = useNavigate();
 
   function selectFun(e){
     let target=e.target.value;
     let id=quraaIds[target]    
     if(id){
-    navigate(`/${props.Dir}/${id}`)
+    setdirection(`/${props.Dir}/${id}`)
   }
   }
 
@@ -265,6 +266,9 @@ export default function AutoCompleteSwar(props) {
             ...params.InputProps,
             startAdornment: (
               props.Dir == "read"?<LibraryBooksIcon style={{ color: 'white' }} />:<BorderColorIcon style={{ color: 'white' }} />
+            ),
+            endAdornment:(
+              <Link to={direction}> <Search style={{cursor:"pointer", color:"white" , margin:"5px",borderRadius:"10px"}} /></Link>
             ),
             style: { color: 'white' }
           }}

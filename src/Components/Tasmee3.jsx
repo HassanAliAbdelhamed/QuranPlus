@@ -196,6 +196,7 @@ export default function Tasmee3() {
                             borderTop: '4px solid rgb(99, 156, 109)',
                             borderBottom: '4px solid rgb(99, 156, 109)',
                             textAlign: 'justify',
+                            lineHeight:"50px" 
                         }}
                     >
                         {/* Show error message if Ayah number is invalid */}
