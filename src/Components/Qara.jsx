@@ -25,7 +25,7 @@ function Qaraa() {
     const currentQare = quraa[id];
     const qareeSwar = currentQare.swar ? 
         swar.filter(swara => currentQare.swar.includes(swara.id)) : 
-        swar; // filter if he has specific surahs
+        swar;
 
     return (
         <>
