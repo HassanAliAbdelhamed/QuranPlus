@@ -124,7 +124,6 @@ export default function AutoCompleteReader(props) {
   
 
   const top100Films = [
-      { label: "وهبي أحمد" },
   { label: "أبو بكر الشاطري" },
   { label: "أحمد الحواشي" },
   { label: "أحمد الطرابلسي" },
@@ -198,6 +197,7 @@ export default function AutoCompleteReader(props) {
   { label: "عماد زهير حافظ" },
   { label: "عمر القزابري" },
   { label: "فارس عباد" },
+  { label: "وهبي احمد" },
   { label: "ماهر المعيقلي" },
   { label: "ماهر شخاشيرو" },
   { label: "محمد آل عبدالله" },
@@ -235,12 +235,12 @@ export default function AutoCompleteReader(props) {
   { label: "ياسر القرشي" },
   { label: "ياسر المزروعي" },
   { label: "يوسف بن نوح احمد" }
-  ];
+];
   
   function selectFun(e){
     window.scrollTo(0,0)
     let target=e.target.value;
-    let id=quraaIds[target]
+    let id = Object.keys(quraaIds).find(key => quraaIds[key] === target);
     if(id){
       if(props.Dir){
         setdirection(`/${id- 1}/${props.Dir}`)
