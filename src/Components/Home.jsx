@@ -64,26 +64,6 @@ export default function Home() {
           {/* <h1 style={{ color: "white", fontSize: "40px" }}>قرآن +</h1> */}
           <Grid
             container
-            spacing={2}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Grid sx={{ color: "white" }} item xs={4}>
-              <AutoCompleteSwarRead Dir="read" Label="قراءة" />
-            </Grid>
-            <Grid sx={{ color: "white" }} item xs={4}>
-              <AutoCompleteSwarRead Dir="tasmee3" Label="تسميع" />
-            </Grid>
-            <Grid sx={{ color: "white" }} item xs={4}>
-              <AutoCompleteReader />
-            </Grid>
-          </Grid>
-
-          <Grid
-            container
             sx={{ width: "100%", position: "relative", marginTop: "20px" }}
           >
             {swar.map((qara) => (
