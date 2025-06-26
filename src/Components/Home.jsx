@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <img src={TopbarIcon} alt="Loading Image" style={{width:"265px" ,marginBottom:"80px",}} />
+          <img src={TopbarIcon} alt="Loading Image" style={{width:"265px" ,marginBottom:"40px"}} />
           {/* <h1 style={{ color: "white", fontSize: "40px" }}>قرآن +</h1> */}
           <Grid
             container
