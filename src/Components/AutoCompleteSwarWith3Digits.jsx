@@ -254,7 +254,7 @@ export default function AutoCompleteSwarWith3Digits() {
 
   return (
     <Autocomplete
-    sx={{ marginTop: '-15px',marginBottom:'15px' }}
+    sx={{ marginTop: '-20px',marginBottom:'30px' ,border:"2px solid rgb(99, 156, 109)" }}
       freeSolo
       options={top100Films.map((option) => option.label)}
       renderInput={(params) => (
@@ -265,10 +265,10 @@ export default function AutoCompleteSwarWith3Digits() {
           InputProps={{
             ...params.InputProps,
             startAdornment: (
-              <LibraryBooksIcon style={{ color: 'white' }} />
+              <LibraryBooksIcon style={{ color: 'rgb(99, 156, 109)' }} />
             ),
             endAdornment:(
-              <Link to={direction}> <Search style={{cursor:"pointer", color:"white" , margin:"5px",borderRadius:"10px"}} /></Link>
+              <Link to={direction}> <Search style={{cursor:"pointer", color:"rgb(99, 156, 109)" , margin:"5px",borderRadius:"10px"}} /></Link>
             ),
             style: { color: 'white' }
           }}

@@ -6,6 +6,8 @@ import AutoCompleteSwarRead from "./AutoCompleteSwar";
 import AutoCompleteReader from "./AutoCompleteReader";
 import AllSwar from "../AllSwar";
 import Loading from "react-loading";
+import HeadIcon from '../Imgs/homeIconImage.png'
+import TopbarIcon from '../Imgs/Home (1).png'
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -44,8 +46,11 @@ export default function Home() {
             justifyContent: "center",
             alignItems: "center",
             height: "100vh",
+            flexDirection:"column",
+            position:"relative"
           }}
         >
+          <img src={HeadIcon} alt="Loading Image" style={{width:"250px" ,height:"250px"}} />
           <Loading
             type="spin"
             color="rgb(99, 156, 109)"
@@ -55,7 +60,8 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <h1 style={{ color: "white", fontSize: "40px" }}>قرآن +</h1>
+          <img src={TopbarIcon} alt="Loading Image" style={{width:"265px" ,marginBottom:"80px",}} />
+          {/* <h1 style={{ color: "white", fontSize: "40px" }}>قرآن +</h1> */}
           <Grid
             container
             spacing={2}

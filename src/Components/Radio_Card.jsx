@@ -38,7 +38,7 @@ export default function RadioCard(props) {
       <CardActionArea sx={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: "center" }}>
         <CardMedia
           component="img"
-          sx={{ borderRadius: "10%", width: 145, height: 170 }}
+          sx={{ borderRadius: "10%", width: 145, height: 170 ,border:"2px solid green"}}
           image={props.imgSource}
           alt={props.imgSource}
         />
