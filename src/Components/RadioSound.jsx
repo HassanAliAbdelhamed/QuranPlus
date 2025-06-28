@@ -2,6 +2,7 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import '../css/style.css'
+import RadioImage from '../Imgs/readioHeadIcon.png'
 import { useState } from 'react';
 
 function RadioSound() {
@@ -61,7 +62,7 @@ function RadioSound() {
 
       <div style={{position:"absolute" , transform: 'translate(-50% , -50%)' , top:"50%" , left:"50%"}}>
 
-        <img  className='img' src="https://hassanaliabdelhamed.github.io/Quraa-Picture/0.jpg" style={{ background:"white",borderRadius:'50%' , maxWidth:'70%' , width:'70%' , height:'70%' , animationPlayState:animationPlayState}} alt="" />
+        <img  className='img' src={RadioImage} style={{borderRadius:'50%' , maxWidth:'70%' , width:'70%' , height:'70%' , animationPlayState:animationPlayState}} alt="" />
       </div>      
       <AudioPlayer
         onPause={()=>{setAnimationPlayState('paused');}}
