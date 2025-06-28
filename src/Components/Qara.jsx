@@ -30,7 +30,7 @@ function Qaraa() {
     return (
         <>
             <Box sx={{ display: 'flex', alignItems: 'center', padding: '40px', background: 'linear-gradient(to bottom, #484e5b, #1f2125)', margin: '-80px -30px 0px' }}>
-                <Avatar alt={currentQare.title} sx={{ width: '120px', height: "120px", marginRight: "30px" }} src={currentQare.img} />
+                <Avatar alt={currentQare.title} sx={{ width: '120px', height: "120px", marginRight: "30px" ,border:"1px solid rgb(99, 156, 109)"}} src={currentQare.img} />
                 <h4 style={{ color: 'white', paddingRight: '30px' }}>{currentQare.title}</h4>
             </Box>
 

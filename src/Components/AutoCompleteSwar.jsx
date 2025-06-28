@@ -254,7 +254,7 @@ export default function AutoCompleteSwar(props) {
 
   return (
     <Autocomplete
-    sx={{ marginTop: '-20px',marginBottom:'30px' ,border:"2px solid rgb(99, 156, 109)"}}
+    sx={{ marginTop: '-20px',marginBottom:'30px' ,border:"1px solid white"}}
     freeSolo
       options={top100Films.map((option) => option.label)}
       renderInput={(params) => (
@@ -265,10 +265,10 @@ export default function AutoCompleteSwar(props) {
           InputProps={{
             ...params.InputProps,
             startAdornment: (
-              props.Dir == "read"?<LibraryBooksIcon style={{ color: 'rgb(99, 156, 109)' }} />:<BorderColorIcon style={{ color: 'rgb(99, 156, 109)' }} />
+              props.Dir == "read"?<LibraryBooksIcon style={{ color: 'white' }} />:<BorderColorIcon style={{ color: 'white' }} />
             ),
             endAdornment:(
-              <Link to={direction}> <Search style={{cursor:"pointer", color:"rgb(99, 156, 109)" , margin:"5px",borderRadius:"10px"}} /></Link>
+              <Link to={direction}> <Search style={{cursor:"pointer", color:"white" , margin:"5px",borderRadius:"10px"}} /></Link>
             ),
             style: { color: 'white' }
           }}

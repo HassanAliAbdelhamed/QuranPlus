@@ -9,10 +9,7 @@
   }
   
   /* Apply the animation to the image */
-  .img {
-    animation: rotate 14s linear infinite; /* You can adjust duration and timing function as per your requirement */
-  }
-
+ 
   @keyframes fadeIn {
     80% {
       opacity: .5;
@@ -31,8 +28,6 @@
     font-weight: bold;
     border-radius: 5px;
     display: block;
-    animation: fadeIn 2s infinite;
-    animation-fill-mode:backwards ;
   }
 #swaraID{
   font-family: "Noto Nastaliq Urdu",serif !important;

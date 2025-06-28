@@ -8,6 +8,8 @@ import AllSwar from '../AllSwar';
 import { MenuOpen } from '@mui/icons-material';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import SwarDrawer from './SwarDrawer';
+import SoundImage from '../Imgs/SoundImage.png'
+import QareImage from '../Imgs/QareImage.png'
 function Player() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedSurah, setSelectedSurah] = useState('');
@@ -54,9 +56,6 @@ function Player() {
   },  [id, par.swara, swar, quraa]); // Clean up dependencies
   
   let navigate = useNavigate();
-
-  let [animationPlayState, setAnimationPlayState] = useState('paused');
-
  
 
   return (
@@ -64,17 +63,18 @@ function Player() {
       <div style={{position:"relative",left:"0",top:"20px",color:"white",textAlign:'left',marginTop:"-20px"}}>
        
       </div>
-      <div style={{ position: "absolute", transform: 'translate(-50%, -50%)', top: "50%", left: "50%" }}>
+      <div className="imageContainer">
+        <img src={SoundImage} style={{position:"absolute" , transform: 'translate(-50%, -50%)', top: "50%", left: "48.5%",maxWidth: '60%', width: '60%', height: 'auto' }} alt="" srcset="" />
+        <div style={{ position: "absolute", transform: 'translate(-50%, -50%)', top: "54%", left: "50%" }}>
         <img
           className='img'
-          src="https://hassanaliabdelhamed.github.io/Quraa-Picture/0.jpg"
-          style={{ background: "white", borderRadius: '50%', maxWidth: '70%', width: '70%', height: '70%', animationPlayState: animationPlayState }}
+          src={QareImage}
+          style={{ borderRadius: '50%', maxWidth: '90%', width: '90%', height: '90%' }}
           alt=""
         />
       </div>
+      </div>
       <AudioPlayer
-        onPause={() => { setAnimationPlayState('paused');}}
-        onPlay={() => { setAnimationPlayState('running');}}
         style={{ direction: "ltr", background: '#27292f', borderRadius: '14px', position: 'absolute', bottom: '5px', left: '0' }}
         autoPlay
         loop
