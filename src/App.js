@@ -12,6 +12,7 @@ import Swar from './Components/Swara'
 import Home from './Components/Home'
 import Swararead from './Components/Swararead'
 import Tasmee3 from './Components/Tasmee3'
+import AppLink from './Pages/AppLink'
 function App() {
   const drawerWidth = 240;
 
@@ -41,6 +42,7 @@ function App() {
               <Route path='radio/:id' element={<RadioSound Route="radio" />} />
               <Route path='read/:id' element={<Swararead Route="Swararead" />} />
               <Route path='tasmee3/:id' element={<Tasmee3 Route="Tasmee3" />} />
+              <Route path='app' element={<AppLink />} />
             </Routes>
           
         </Box>

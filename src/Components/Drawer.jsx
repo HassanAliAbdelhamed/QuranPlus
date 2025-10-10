@@ -67,6 +67,14 @@ function Mui_Drawer(props) {
           <ListItemText sx={{ textAlign: 'right' }}>الإذاعة </ListItemText>
         </Link>
       </ListItemButton>
+      <ListItemButton onClick={handleDrawerClose} sx={{padding:'0px'}}>
+        <Link to={'/app'} style={{ backgroundColor: 'transparent', color: 'white', textDecoration: "none", borderRadius:"50px 0 0 50px",display: "flex",  padding:"6px 18px",width: "100%", alignItems: 'center' }} >
+          <ListItemIcon sx={{ color: "white", minWidth: 40 }}>
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play" style={{ height: 36 }} />
+          </ListItemIcon>
+          <ListItemText sx={{ textAlign: 'right' }}>حمل التطبيق</ListItemText>
+        </Link>
+      </ListItemButton>
     </div>
   );
 
