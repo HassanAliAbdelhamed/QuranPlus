@@ -1,5 +1,4 @@
-import React from 'react'
-import { Box, Button, Typography, Link } from '@mui/material'
+import { Box, Typography, Link } from '@mui/material'
 
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.hassanali2.quranplus&pcampaignid=web_share'
 
