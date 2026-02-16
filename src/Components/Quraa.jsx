@@ -10,7 +10,7 @@ export default function Quraa() {
             <Grid container sx={{ width: "100%", position: 'relative' }}>
                 {quraa.map(qara => (
                     <Grid item xs={6} sm={3} xl={2} gap={1} key={qara.id}>
-                        <Link onClick={()=>{window.scrollTo(0,0)}} style={{ textDecoration: "none", color: 'red' }} ID={qara.id} to={`/${qara.id}`}><ActionAreaCard imgSource={qara.img} title={qara.title} /></Link>
+                        <Link onClick={()=>{window.scrollTo(0,0)}} style={{ textDecoration: "none", color: 'red' }} ID={qara.id} to={`/${qara.id}`}><ActionAreaCard imgSource={qara.img} title={qara.title} category={qara.category} /></Link>
                     </Grid>
                 ))}
             </Grid>

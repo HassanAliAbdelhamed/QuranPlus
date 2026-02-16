@@ -31,7 +31,14 @@ function Qaraa() {
         <>
             <Box sx={{ display: 'flex', alignItems: 'center', padding: '40px', background: 'linear-gradient(to bottom, #484e5b, #1f2125)', margin: '-80px -30px 0px' }}>
                 <Avatar alt={currentQare.title} sx={{ width: '120px', height: "120px", marginRight: "30px" ,border:"1px solid rgb(99, 156, 109)"}} src={currentQare.img} />
-                <h4 style={{ color: 'white', paddingRight: '30px' }}>{currentQare.title}</h4>
+                <div>
+                  <h4 style={{ color: 'white', paddingRight: '30px', margin: '0' }}>{currentQare.title}</h4>
+                  {currentQare.category && (
+                    <p style={{ color: 'rgb(99, 156, 109)', paddingRight: '30px', margin: '5px 0 0 0', fontSize: '14px' }}>
+                      التصنيف: {currentQare.category}
+                    </p>
+                  )}
+                </div>
             </Box>
 
             <AutoCompleteSwarWith3Digits />
