@@ -11,38 +11,32 @@ import SoundImage from '../Imgs/SoundImage.png'
 import QareImage from '../Imgs/QareImage.png'
 function Player() {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [selectedSurah, setSelectedSurah] = useState('');
 
   // Open and close the menu
   const handleMenuClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
 
 
   let swar= AllSwar;
   let par = useParams();
-  let swara = par.swara;
-  let id = par.id;
-  let swara1 = swar[parseInt(swara) - 1];
-  let swaraTitle = swara1.title;
-  let swaraId = swara1.id  
-  let urlAudio = quraa[id].Audiosource + swara + ".mp3";
-  useEffect(() => {
-    return () => {
-      swara = par.swara;
-      swara1 = swar[parseInt(swara) - 1];
-      swaraTitle = swara1.title;
-      urlAudio = `${quraa[id].Audiosource}${swara}.mp3`;
-  
-    };
-  },  [id, par.swara, swar, quraa]); // Clean up dependencies
-  
   let navigate = useNavigate();
+  const [swara, setSwara] = useState(par.swara);
+  const [id, setId] = useState(par.id);
+  const [swara1, setSwara1] = useState(swar[parseInt(par.swara) - 1]);
+  const [swaraTitle, setSwaraTitle] = useState(swara1?.title);
+  const [swaraId, setSwaraId] = useState(swara1?.id);
+  const [urlAudio, setUrlAudio] = useState(quraa[id]?.Audiosource + par.swara + ".mp3");
+  
+  useEffect(() => {
+    setSwara(par.swara);
+    const newSwara1 = swar[parseInt(par.swara) - 1];
+    setSwara1(newSwara1);
+    setSwaraTitle(newSwara1?.title);
+    setSwaraId(newSwara1?.id);
+    setUrlAudio(`${quraa[id]?.Audiosource}${par.swara}.mp3`);
+  }, [id, par.swara, par.id]);
  
 
   return (

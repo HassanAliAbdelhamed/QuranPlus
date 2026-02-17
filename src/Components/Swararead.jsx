@@ -102,7 +102,7 @@ export default function Swararead() {
         console.log(knowFuction);
         fetchAyatData();
 
-    }, [AyatNumber]);
+    }, [AyatNumber, ayaId, id, knowFuction]);
 
 
     // loading untill images load
