@@ -5,22 +5,13 @@ import quraa from '../quraa';
 import '../css/style.css';
 import { useEffect, useState } from 'react';
 import AllSwar from '../AllSwar';
-import { MenuOpen } from '@mui/icons-material';
-import { IconButton, Menu, MenuItem } from '@mui/material';
+import { IconButton } from '@mui/material';
 import SwarDrawer from './SwarDrawer';
 import SoundImage from '../Imgs/SoundImage.png'
 import QareImage from '../Imgs/QareImage.png'
 function Player() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedSurah, setSelectedSurah] = useState('');
-
-  function convertToThreeDigitString(number) {
-    let numberString = number.toString();
-    while (numberString.length < 3) {
-        numberString = "0" + numberString;
-    }
-    return numberString;
-}
 
   // Open and close the menu
   const handleMenuClick = (event) => {
@@ -31,10 +22,6 @@ function Player() {
     setAnchorEl(null);
   };
 
-  const handleSurahSelect = (surah) => {
-    setSelectedSurah(surah);
-    handleMenuClose();
-  };
 
 
   let swar= AllSwar;

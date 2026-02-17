@@ -2,8 +2,6 @@ import * as React from "react";
 import { Grid } from "@mui/material";
 import "../css/home.css";
 import CardOfSwar from "./CardOfSwar";
-import AutoCompleteSwarRead from "./AutoCompleteSwar";
-import AutoCompleteReader from "./AutoCompleteReader";
 import AllSwar from "../AllSwar";
 import Loading from "react-loading";
 import HeadIcon from '../Imgs/homeIconImage.png'

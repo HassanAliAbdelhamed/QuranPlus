@@ -68,7 +68,7 @@ function Mui_Drawer(props) {
         </Link>
       </ListItemButton>
       <ListItemButton onClick={handleDrawerClose} sx={{padding:'0px'}}>
-        <a target='_blank' href='https://play.google.com/store/apps/details?id=com.hassanali2.quranplus&pcampaignid=web_share' style={{ backgroundColor: 'transparent', color: 'white', textDecoration: "none", backgroundColor:"#1f2125",display: "flex",width: "100%", alignItems: 'center',justifyContent:'center' }} >
+        <a target='_blank' rel="noreferrer" href='https://play.google.com/store/apps/details?id=com.hassanali2.quranplus&pcampaignid=web_share' style={{  color: 'white', textDecoration: "none", backgroundColor:"#1f2125",display: "flex",width: "100%", alignItems: 'center',justifyContent:'center' }} >
           <ListItemIcon sx={{ color: "white", minWidth: 40 }}>
             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play" style={{ height: 50 }} />
           </ListItemIcon>

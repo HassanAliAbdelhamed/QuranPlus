@@ -1,6 +1,4 @@
-import React from 'react';
 import Quraa from './Quraa';
-import { Typography } from '@mui/material';
 import AutoCompleteReader from './AutoCompleteReader';
 import HomeImg from '../Imgs/homeIconImage.png'
 

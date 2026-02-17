@@ -265,7 +265,7 @@ export default function AutoCompleteSwar(props) {
           InputProps={{
             ...params.InputProps,
             startAdornment: (
-              props.Dir == "read"?<LibraryBooksIcon style={{ color: 'white' }} />:<BorderColorIcon style={{ color: 'white' }} />
+              props.Dir === "read"?<LibraryBooksIcon style={{ color: 'white' }} />:<BorderColorIcon style={{ color: 'white' }} />
             ),
             endAdornment:(
               <Link to={direction}> <Search style={{cursor:"pointer", color:"white" , margin:"5px",borderRadius:"10px"}} /></Link>
