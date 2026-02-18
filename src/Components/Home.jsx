@@ -48,7 +48,7 @@ export default function Home() {
             position:"relative"
           }}
         >
-          <img src={HeadIcon} alt="Loading Image" style={{width:"250px" ,height:"250px"}} />
+          <img src={HeadIcon} alt="Loading" style={{width:"250px" ,height:"250px"}} />
           <Loading
             type="spin"
             color="rgb(99, 156, 109)"
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <img src={TopbarIcon} alt="Loading Image" style={{width:"265px" ,marginBottom:"45px",}} />
+          <img src={TopbarIcon} alt="Topbar" style={{width:"265px" ,marginBottom:"45px",}} />
           <Grid
             container
             sx={{ width: "100%", position: "relative", marginTop: "20px" }}

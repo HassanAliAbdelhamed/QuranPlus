@@ -9,7 +9,7 @@ function Radio() {
     <>
       <img
         src={RadioImg}
-        alt="This Is Home Image"
+        alt="Radio"
         style={{ maxWidth: "100%", height: "300px", marginTop: "-70px" }}
       />
 

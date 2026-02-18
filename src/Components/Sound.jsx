@@ -10,7 +10,7 @@ import SwarDrawer from './SwarDrawer';
 import SoundImage from '../Imgs/SoundImage.png'
 import QareImage from '../Imgs/QareImage.png'
 function Player() {
-  const [setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   // Open and close the menu
   const handleMenuClick = (event) => {
@@ -22,21 +22,20 @@ function Player() {
   let swar= AllSwar;
   let par = useParams();
   let navigate = useNavigate();
-  const [setSwara] = useState(par.swara);
-  const [id] = useState(par.id);
+  const [swara, setSwara] = useState(par.swara);
+  const [id, setId] = useState(par.id);
   const [swara1, setSwara1] = useState(swar[parseInt(par.swara) - 1]);
   const [swaraTitle, setSwaraTitle] = useState(swara1?.title);
   const [swaraId, setSwaraId] = useState(swara1?.id);
   const [urlAudio, setUrlAudio] = useState(quraa[id]?.Audiosource + par.swara + ".mp3");
   
   useEffect(() => {
-    setSwara(par.swara);
     const newSwara1 = swar[parseInt(par.swara) - 1];
     setSwara1(newSwara1);
     setSwaraTitle(newSwara1?.title);
     setSwaraId(newSwara1?.id);
     setUrlAudio(`${quraa[id]?.Audiosource}${par.swara}.mp3`);
-  }, [id, par.swara, par.id,swar]);
+  }, [id, par.swara, swar]);
  
 
   return (
