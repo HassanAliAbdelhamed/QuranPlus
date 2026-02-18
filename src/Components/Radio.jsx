@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import "../App.css";
 import RadioImg from "../Imgs/readioHeadIcon.png";
@@ -25,6 +25,7 @@ function Radio() {
             <RadioCard
               imgSource="https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/1.jpg"
               title=" أبو بكر الشاطري"
+              alt="This Is Radio Image"
             />
           </Link>
         </Grid>
@@ -40,6 +41,7 @@ function Radio() {
             <RadioCard
               imgSource="https://hassanaliabdelhamed.github.io/Quraa-Picture/Pictures/3.jpg"
               title=" أحمد خضر الطرابلسي"
+              alt="This Is Radio Image"
             />
           </Link>
         </Grid>
